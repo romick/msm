@@ -10,7 +10,7 @@ function update_system_packages() {
 
 function install_dependencies() {
     install_log "Installing required packages"
-    sudo apt-get install screen rsync zip || install_error "Couldn't install dependencies"
+    sudo apt-get install -y screen rsync zip || install_error "Couldn't install dependencies"
 }
 
 function enable_init() {
