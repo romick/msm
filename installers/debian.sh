@@ -3,9 +3,9 @@ wget -q ${UPDATE_URL}/installers/common.sh -O /tmp/msmcommon.sh
 source /tmp/msmcommon.sh && rm -f /tmp/msmcommon.sh
 
 function update_system_packages() {
-    install_log "Updating sources"
-    sudo apt-get update || install_error "Couldn't update package list"
-    sudo apt-get -y upgrade || install_error "Couldn't upgrade packages"
+    install_log "Next step"
+    # sudo apt-get update || install_error "Couldn't update package list"
+    # sudo apt-get -y upgrade || install_error "Couldn't upgrade packages"
 }
 
 function install_dependencies() {
