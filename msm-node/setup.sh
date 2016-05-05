@@ -5,7 +5,7 @@ mkdir ~/.ssh
 echo $MSM_SSH_PUB_KEY >> ~/.ssh/authorized_keys
 
 #create minecraft server
-msm create anyserver
+msm server create anyserver
 
 #start minecraft server
 msm anyserver start
